@@ -1,0 +1,167 @@
+/* --- STRUCTURE HERE --- */
+
+body {
+	background-image:url(images/concrete_seamless.png);
+  margin: 0;
+}
+
+header {
+	height: 250PX;
+	background-color: #06202c;
+}
+
+footer {
+	height: 200px;
+	background-color: #06202c;
+	padding: 20px;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;	
+}
+
+
+
+
+/* --- LOGO HERE  --- */
+
+/*MODIFY EVERYTHING HERE*/
+
+header h1 {
+	font-family: Helvetica, sans-serif;
+	color: #f0eee9;
+	margin: 0px;
+	padding-top: 45px;
+	font-size: 55px;
+	text-align:center;
+  letter-spacing: 7px;
+}
+
+header h2 {
+	font-family: Helvetica, sans-serif;
+	color: #ffecbb;
+	margin: 0px;
+	padding-top: 30px;
+	font-size: 22px;
+	text-align: center;
+  letter-spacing: 5px;
+}
+
+/* -------  Type ------- */
+
+h1, h2, h3 {
+	color: #403933;
+	font-family: 'Noto Serif', serif;
+  letter-spacing: 2px;
+}
+
+h1 { font-size: 38px;}
+h2 { font-size: 30px;}
+h3 { font-size: 24px;}
+
+p, li {
+	font-family: 'Noto Sans', sans-serif;
+	color: #2d2c2a;
+	font-size: 16px;
+	font-weight: 400;
+    line-height: 26px;
+}
+
+ul {
+ list-style: square;
+}
+
+a {
+	font-weight: 700;
+	text-decoration: none;	
+}
+
+/* a:link { color: #787238; }
+a:visited { color: #dbc443; }
+a:hover { color: #6e3d123b; }
+a:active { color: #403933; } */
+
+
+a:hover {
+	text-decoration: underline;	
+}
+
+footer h2 {
+	color: #fff;
+	text-align: left;
+  letter-spacing: 3px;
+}
+
+
+/* -------  Elements ------- */
+
+/* img {
+  border: 0 20px;
+  padding: 0 20px;
+} */
+
+img { 
+  margin: auto;
+  width: 90%;
+} 
+
+/* hr { border: .5px solid #403933;} */
+
+
+.btn {
+  display: inline-block;
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #ffecbb;
+  color: #403933;
+}
+
+
+
+/* --- ABOUT / PORTFOLIO ---*/
+#about {
+  background-color: bisque;
+  padding: 20px 0 30px 0;
+  margin: 120px 0;
+}
+
+#portfolio {
+  margin-bottom: 100px;
+}
+
+
+/* Groups & Items  (Mobile First) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
