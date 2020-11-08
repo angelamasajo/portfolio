@@ -12,20 +12,26 @@
 <!-- CONTENT HERE -->
 <body>
   <header>
-    <div>
+
       <h1>
         HELLO, I'M ANGELA.
       </h1>
-      <h2>
-        software developer 
-      </h2>
-    </div>
+
+      <nav> <!-- EDIT THE LINK AND STYLE -->
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about me</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+
   </header>
 
 
   <main>
     <!-- intro here -->
-    <article class="wrapper">
+    <article id="home" class="wrapper">
     <div class="group">
       <div class="item">
       <img src="images/profile_pic.jpg" alt="angela masajo" width="400">
@@ -54,30 +60,36 @@
     
     <!-- about me here -->
     <article id="about">
-    <div class="wrapper">
-      <h2>about me</h2>
+    <div class="wrapper"> 
+    <div class="group">
+      <div class="item-double">
+        <h2>about me</h2>
         <p>
           I think software development gives me the best of both worlds. It allows me to problem solve and utilize critical thinking to reach solutions while being creative doing it!
         <p>
-          I'm a speech-language pathologist considering myself to be a jack of all trades. In addition to my healthcare and clinical expertise, I also have a diverse background in the areas of:
+          I'm a speech-language pathologist considering myself to be a jack of all trades. In addition to my healthcare and clinical expertise, I also have a diverse background in the areas of photography, graphic design, social media, and event management.
         </p>
-        <ul>
-          <li>photography</li>
-          <li>graphic design</li>
-          <li>social media</li>
-          <li>event management</li>
-        </ul>
         <p>
           After being in the healthcare field, I realized I really enjoyed working with a multidisciplinary team to reach a common goal. Collaboration and creative problem solving are my specialties!
         </p>
         <p>
-          If you're looking for a software developer or looking to learn more coding with someone, please don't hesitate to reach out!
+          Some services I can provide: 
         </p>
+          <ul>
+            <li>creative web solutions</li>
+            <li>easy to maintain websites</li>
+            <li>add more services here as I go</li>
+          </ul>
+      </div>
+      <div class="item">
+        <img src="images/daisy.jpg" alt="photo of daisy">
+      </div>
+    </div>
     </div>
     </article>
 
     <!-- portfolio -->
-    <article class="wrapper">
+    <article id="portfolio" class="wrapper">
     <h2>
       portfolio
     </h2>
@@ -113,16 +125,39 @@
   </main>
 
   <!-- footer and contact -->
-  <footer>
-  <div class="wrapper">
-    <h2>
-      contact me 
-    </h2>
-    <a href="https://www.linkedin.com/in/angelamasajo/" class="btn">LinkedIn</a>
-    <a href="https://github.com/angelamasajo" class="btn">GitHub</a>
-    <a href="mailto:aabmasajo@gmail.com" class="btn">Email Me</a>
+  <article id="contact" class="wrapper">
+    <h2>contact me</h2>    
+      <div class="group">
+        <div class="item-double">
+          <form action="https://formspree.io/aabmasajo@gmail.com" method="POST" >
+            <!--name-->
+            <label for="user-name">Name:</label>
+            <input id="user-name" type="text" name="name">
+            <!--email-->
+            <label for="user-email">Email:</label>
+            <input id="user-email" type="text" name="email">
+            <!--message-->
+            <label for="user-message">Message:</label>
+            <textarea id="user-message" name="message"></textarea>
+            <!--submit button -->
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="item">
+          <img src="images/placeholder-image-copy.png" alt ="sailor moon" class="contact-image">
+        </div>
+      </div>
     
-  </div>
+  </article>
+  
+  
+  <footer>
+    <div class="wrapper">
+      <h2>connect with me</h2>
+        <a href="https://www.linkedin.com/in/angelamasajo/" class="btn">LinkedIn</a>
+        <a href="https://github.com/angelamasajo" class="btn">GitHub</a>
+        <a href="mailto:aabmasajo@gmail.com" class="btn">Email Me</a>
+    </div>
   </footer>
 
 
